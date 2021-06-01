@@ -1,5 +1,0 @@
-I have been working with a the C language a bit more recently and have taken an interest to it. While I wouldn't call it my favorite as all languages have their strengths and weaknesses, I would definitely say it has pitfalls to make it challenging at times yet enough performance benefits to make it worth it. 
-
-If I could change one thing about it I would probably change something to do with its memory management system or malloc. Manually allocated memory can be very useful but a painful problem to track down when something is not being freed. Implementing some kind of list of all currently allocated memory address heads then double checking that they have all been freed at the end in a loop might possibly work. Another solution could be a kind of garbage collection system similar to what is seen in Java. 
-
-Any implementation of this would most likely cut down on performance benefits and could lead to more CPU cycles however this could be a useful debug tool to toggle to quickly see if a segfault is memory related. This tool could also be used almost like training wheels to help new developers crossing over from more simple and forgiving languages.
