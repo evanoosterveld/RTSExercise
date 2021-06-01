@@ -1,6 +1,6 @@
 /* 
-Usage, complile and run this c file with all command line arguements for a given array followed by the input number.
-For example, for the array [1,2,4,5] with 3 as the input number, run it as ./num1 1 2 3 4 5 3
+Usage, complile and run this c file all with command line arguements for a given array followed by the input number.
+For example, build with gcc -o num1 num1.c and for the array [1,2,4,5] with 3 as the input number, run it as ./num1 1 2 3 4 5 3
 Authored by Evan Oosterveld 
 May 27, 2021 
 */
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     }
     else if (argc == 2)
     {
-        printf("Must have more than one number given as the array and one as the number to be checked.\n");
+        printf("Must have at least two numbers given as the array and one number as the value to be checked.\n");
     }
     else
     {
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
         int above = 0;
         int below = 0;
         //These for loops could have been combined however this problem seemed to reference
-        //an already constructed array, so that is done before any value comparisons occur.
+        //an already constructed array, so the construction is done before any value comparisons occur.
 
         //Array construction
         for (int i = 1; i <= arrayLength; i++)
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
             intArray[i - 1] = atoi(argv[i]);
         }
 
-        //Value checking, no behavior defined for when a number is equal to inoutted number.
+        //Value checking, no behavior defined for when a number is equal to inputted number.
         for (int i = 0; i < arrayLength; i++)
         {
             if (intArray[i] > inputNum)
